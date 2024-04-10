@@ -1,0 +1,7 @@
+1.Bubble sort : 
+      i. Higher sizes
+      ii. Average time on each sample array sizes
+2.git push
+3. insertion sort
+4. merge sort
+5. quick sort  
