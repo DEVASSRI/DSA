@@ -1,4 +1,4 @@
-def merge(array1, array2, asc = True):
+def merge(array1, array2, asc):
   n1, n2 = len(array1), len(array2)
   new_sorted_array = []
   i, j = 0, 0   #These are intializing the variables
@@ -31,14 +31,14 @@ def mergesort(array, asc = True):
   if n<=1:
     return array
   m = n // 2
-  arr1 = mergesort(array[:m])
-  arr2 = mergesort(array[m:])
+  arr1 = mergesort(array[:m], asc)
+  arr2 = mergesort(array[m:], asc)
   
-  return merge(arr1, arr2, asc = True)
+  return merge(arr1, arr2, asc)
   
 arr = [12, 11, 13, 5, 6, 7, 29, 36]
 
-print(mergesort(arr))
+print(mergesort(arr, asc = False))
   
 
 
